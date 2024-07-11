@@ -50,3 +50,21 @@ I0000 00:00:1720703857.129810 1241328 work_stealing_thread_pool.cc:269] WorkStea
 image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 640x640 1 licence, 491.4ms
 Speed: 11.7ms pre-process, 491.4ms inference, 4.1ms postprocess per image at shape (1, 3, 640, 640)
 Results saved to [1mruns/detect/train59[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720704174.515045 1243698 ev_epoll1_linux.cc:125] grpc epoll fd: 8
+I0000 00:00:1720704174.739541 1243718 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720704174.740376 1243718 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 640x640 1 licence, 238.4ms
+Speed: 2.7ms pre-process, 238.4ms inference, 4.5ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train60[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720704411.124632 1245411 ev_epoll1_linux.cc:125] grpc epoll fd: 8
+I0000 00:00:1720704411.363239 1245430 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720704411.364220 1245430 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 640x640 1 licence, 205.0ms
+Speed: 8.1ms pre-process, 205.0ms inference, 2.9ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train[0m
