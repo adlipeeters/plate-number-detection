@@ -65,6 +65,16 @@ def perform_ocr_on_image_google_vision(img, coordinates):
     else:
         logging.info("No text detected by Google Vision API.")
         return ""  # Return an empty string if no text was detected
+    
+def normalize_plate(text_ocr):
+    # Remove 'RO' if it appears at the beginning
+    if text_ocr.upper().startswith('RO'):
+        text_ocr = text_ocr[2:]
+    
+    # Remove special characters, keeping only letters and numbers
+    normalized_plate = ''.join(char for char in text_ocr if char.isalnum())
+    
+    return normalized_plate
 
 class DetectionPredictor(BasePredictor):
     def __init__(self, *args, **kwargs):
@@ -135,6 +145,7 @@ class DetectionPredictor(BasePredictor):
 
                 # text_ocr = perform_ocr_on_image(im0, xyxy)
                 text_ocr = perform_ocr_on_image_google_vision(im0, xyxy)
+                text_ocr = normalize_plate(text_ocr)
                 label = text_ocr
 
                 if text_ocr:  # Append detected text to the list

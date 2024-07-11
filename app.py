@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from predict_modified import run_prediction
 import base64
@@ -13,16 +13,14 @@ CORS(app)  # Enable CORS for all routes
 
 app.config['UPLOAD_FOLDER'] = 'assets/uploads/'
 app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg', 'webp', 'svg'}
-
+app.config['ROOT_DIR'] = os.path.abspath(os.path.dirname(__file__))  # Define the root directory
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
 
-
 @app.route('/')
 def home():
-    return 'Home Page'
-
+    return send_from_directory(app.config['ROOT_DIR'], 'index.html')
 
 @app.route('/process_image', methods=['POST'])
 def process_image():
@@ -65,12 +63,10 @@ def process_image():
     else:
         return jsonify({"error": "Invalid file type. Only images are allowed (png, jpg, jpeg, webp, svg)."}), 400
 
-
 @app.route('/greet', methods=['GET'])
 def greet():
     name = request.args.get('name', 'World')
     return f'Hello, {name}!'
-
 
 if __name__ == '__main__':
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 relative overflow-hidden">
+        <div class="absolute w-full h-full backdrop-blur flex justify-center items-center" id="spinner"
+            style="display:none">
+            <span class="loader"></span>
+        </div>
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+            aria-hidden="true">
+            <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+        <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Demo</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Detectare numere de înmatriculare</p>
+        </div>
+        <form id="upload-form" class="mx-auto mt-16 max-w-4xl sm:mt-20">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6">
+                <div class="w-full">
+                    <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Încarcă o
+                        imagine</label>
+
+                    <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                            class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer ">
+                            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                                </svg>
+                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                        class="font-semibold">Click to upload</span> or drag and drop</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX.
+                                    800x400px)</p>
+                            </div>
+                            <input id="dropzone-file" type="file" name="file" class="hidden" />
+                        </label>
+                    </div>
+
+                </div>
+                <div class="w-full">
+                    <label for="camera" class="block text-sm font-semibold leading-6 text-gray-900">Camera</label>
+                    <div class="flex items-center justify-center w-full">
+                        <canvas id="facecanvas"
+                            class="w-full h-64 border-2 border-gray-300 border-dashed rounded-lg"></canvas>
+                        <video autoplay muted playsinline id="video" style="display: none;">
+                        </video>
+                    </div>
+                    <button type="button" id="capture"
+                        class="mt-4 block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">Captură</button>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div id="image-preview-container" class="hidden">
+                        <img id="image-preview" src="" alt="Image Preview"
+                            class="w-full h-auto rounded-lg hover:scale-110 duration-300 transition-all" />
+                    </div>
+                    <div id="processed-image-preview-container" class="hidden">
+                        <img id="processed-image-preview" src="" alt="Image Preview"
+                            class="w-full h-auto rounded-lg hover:scale-110 duration-300 transition-all" />
+                    </div>
+                    <div class="col-span-2">
+                        <h3 class="text-xl">Rezultat</h3>
+                        <ul class="list-disc mt-4" id="processed-image-text">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 flex gap-4">
+                <button type="button" id="delete-image"
+                    class="block w-full rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Șterge</button>
+                <button id="submit_form" type="button"
+                    class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    Procesează
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Check if the device is mobile
+        function isMobile() {
+            return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        }
+
+        // Access webcam with the back camera for mobile devices
+        async function setupCamera() {
+            const video = document.getElementById('video');
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    audio: false,
+                    video: {
+                        facingMode: isMobile() ? { exact: 'environment' } : 'user',
+                        height: { ideal: 1920 },
+                        width: { ideal: 1920 },
+                    },
+                });
+                video.srcObject = stream;
+                return new Promise((resolve) => {
+                    video.onloadedmetadata = () => {
+                        console.log("Video metadata loaded");
+                        video.play(); // Ensure video is playing
+                        resolve(video);
+                    };
+                });
+            } catch (err) {
+                console.error("Error accessing camera: ", err);
+            }
+        }
+
+        function drawWebcamContinuous(video, canvas, ctx) {
+            function draw() {
+                if (video.readyState === video.HAVE_ENOUGH_DATA) {
+                    console.log("Drawing frame");
+                    if (canvas.width !== video.videoWidth || canvas.height !== video.videoHeight) {
+                        console.log("Setting canvas dimensions");
+                        canvas.width = video.videoWidth;
+                        canvas.height = video.videoHeight;
+                    }
+                    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                } else {
+                    console.log("Video not ready, state:", video.readyState);
+                }
+                requestAnimationFrame(draw);
+            }
+            draw();
+        }
+
+        async function main() {
+            const video = await setupCamera();
+            const canvas = document.getElementById('facecanvas');
+            const ctx = canvas.getContext('2d');
+            drawWebcamContinuous(video, canvas, ctx);
+        }
+
+        document.addEventListener("DOMContentLoaded", main);
+
+        // Capture image and resize
+        function captureImage() {
+            const canvas = document.getElementById('facecanvas');
+            const resizedCanvas = document.createElement('canvas');
+            const maxWidth = 600;
+            let width = canvas.width;
+            let height = canvas.height;
+
+            if (width > maxWidth) {
+                height = Math.floor((height * maxWidth) / width);
+                width = maxWidth;
+            }
+
+            resizedCanvas.width = width;
+            resizedCanvas.height = height;
+            const ctx = resizedCanvas.getContext('2d');
+            ctx.drawImage(canvas, 0, 0, width, height);
+
+            return resizedCanvas.toDataURL('image/png');
+        }
+
+        // Capture button event
+        document.getElementById('capture').addEventListener('click', function () {
+            const dataURL = captureImage();
+            $('#image-preview').attr('src', dataURL);
+            $('#image-preview-container').removeClass('hidden');
+
+            // click processing button
+            $('#submit_form').click();
+        });
+
+        // Other existing functions
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#image-preview').attr('src', e.target.result);
+                    $('#image-preview-container').removeClass('hidden');
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#dropzone-file").change(function () {
+            readURL(this);
+        });
+
+        $('#delete-image').click(function () {
+            $('#dropzone-file').val('');
+
+            $('#image-preview-container').addClass('hidden');
+            $('#image-preview').attr('src', '');
+
+            $('#processed-image-preview-container').addClass('hidden');
+            $('#processed-image-preview').attr('src', '');
+
+            $('#processed-image-text').empty();
+        });
+
+        $('#submit_form').click(function () {
+            var formData = new FormData();
+            // Append captured image if exists
+            const imageSrc = document.getElementById('image-preview').src;
+            if (imageSrc) {
+                formData.append('file', dataURLtoBlob(imageSrc), 'capture.png');
+            } else {
+                var fileInput = document.getElementById('dropzone-file');
+                if (fileInput.files && fileInput.files[0]) {
+                    formData.append('file', fileInput.files[0]);
+                }
+            }
+
+            $.ajax({
+                url: 'https://plate-number-detection.andreidev.site/process_image',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                beforeSend: function () {
+                    $('#spinner').show();
+                    $('#processed-image-text').empty();
+                },
+                success: function (data) {
+                    console.log(data);
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success',
+                        text: 'Image processed successfully',
+                        toast: true,
+                        timer: 2500,
+                        position: 'top-right',
+                    });
+                    $('#processed-image-preview').attr('src', 'data:image/jpg;base64,' + data.image_base64);
+                    $('#processed-image-preview-container').removeClass('hidden');
+                    data.detected_plates.map((plate) => {
+                        $('#processed-image-text').append(`<li>${plate}</li>`);
+                    })
+                },
+                error: function (error) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'There was an error processing the image',
+                        toast: true,
+                        timer: 2500,
+                        position: 'top-right',
+                    });
+                },
+                complete: function () {
+                    $('#spinner').hide();
+                }
+            });
+        });
+
+        // Utility function to convert dataURL to Blob
+        function dataURLtoBlob(dataURL) {
+            const binary = atob(dataURL.split(',')[1]);
+            const array = [];
+            for (let i = 0; i < binary.length; i++) {
+                array.push(binary.charCodeAt(i));
+            }
+            return new Blob([new Uint8Array(array)], { type: 'image/png' });
+        }
+    </script>
+</body>
+
+</html>
