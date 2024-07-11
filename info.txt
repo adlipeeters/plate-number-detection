@@ -1,0 +1,39 @@
+def perform_tesseract_ocr_on_image(img, coordinates):
+    x, y, w, h = map(int, coordinates)
+    cropped_img = img[y:h, x:w]
+
+    # Use the cropped original color image for Tesseract OCR
+    try:
+        # Enhance image for better OCR results (e.g., thresholding)
+        enhanced_img = cv2.adaptiveThreshold(
+            cv2.cvtColor(cropped_img, cv2.COLOR_RGB2GRAY),
+            255,
+            cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+            cv2.THRESH_BINARY,
+            31,
+            2
+        )
+
+        # Debugging: Save the enhanced image
+        enhanced_image_path = "enhanced_image.png"
+        cv2.imwrite(enhanced_image_path, enhanced_img)
+        print(f"Enhanced image saved to {enhanced_image_path}")
+
+        # Tesseract OCR on the original color image
+        custom_config = r'--oem 3 --psm 6'
+        tesserRes = pytesseract.image_to_string(cropped_img, config=custom_config)
+        print("Tesseract OCR Result:", tesserRes)
+    except Exception as e:
+        print(f"Error with Tesseract OCR: {e}")
+
+    # Perform EasyOCR on the grayscale version of the image for better results
+    gray_img = cv2.cvtColor(cropped_img, cv2.COLOR_RGB2GRAY)
+    results = reader.readtext(gray_img)
+    print(results)
+
+    text = ""
+    for res in results:
+        if len(results) == 1 or (len(res[1]) > 6 and res[2] > 0.2):
+            text = res[1]
+
+    return str(text)

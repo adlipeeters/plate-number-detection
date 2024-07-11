@@ -1,0 +1,2 @@
+[2024-07-11 11:55:07,923][tensorflow][WARNING] - From D:\PycharmProjectsV2\AINumberPlateDetector\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
