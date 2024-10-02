@@ -57,11 +57,12 @@
                 <div class="w-full">
                     <label for="camera" class="block text-sm font-semibold leading-6 text-gray-900">Camera</label>
                     <div class="flex items-center justify-center w-full">
-                        <canvas id="facecanvas"
-                            class="w-full h-64 border-2 border-gray-300 border-dashed rounded-lg"></canvas>
-                        <video autoplay muted playsinline id="video" style="display: none;">
+                        <canvas id="facecanvas" width="320" height="240"
+                            class="w-full h-auto border-2 border-gray-300 border-dashed rounded-lg"></canvas>
+                        <video autoplay muted playsinline id="video" width="320" height="240" style="display: none;">
                         </video>
                     </div>
+
                     <button type="button" id="capture"
                         class="mt-4 block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">Captură</button>
                 </div>
@@ -106,8 +107,8 @@
                     audio: false,
                     video: {
                         facingMode: isMobile() ? { exact: 'environment' } : 'user',
-                        height: { ideal: 1920 },
-                        width: { ideal: 1920 },
+                        height: { ideal: 240 },
+                        width: { ideal: 320 },
                     },
                 });
                 video.srcObject = stream;
@@ -127,11 +128,6 @@
             function draw() {
                 if (video.readyState === video.HAVE_ENOUGH_DATA) {
                     console.log("Drawing frame");
-                    if (canvas.width !== video.videoWidth || canvas.height !== video.videoHeight) {
-                        console.log("Setting canvas dimensions");
-                        canvas.width = video.videoWidth;
-                        canvas.height = video.videoHeight;
-                    }
                     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
                 } else {
                     console.log("Video not ready, state:", video.readyState);
@@ -150,31 +146,47 @@
 
         document.addEventListener("DOMContentLoaded", main);
 
-        // Capture image and resize
+        // Capture image and resize if necessary
         function captureImage() {
             const canvas = document.getElementById('facecanvas');
-            const resizedCanvas = document.createElement('canvas');
-            const maxWidth = 600;
-            let width = canvas.width;
-            let height = canvas.height;
+            return canvas.toDataURL('image/png');
+        }
 
-            if (width > maxWidth) {
-                height = Math.floor((height * maxWidth) / width);
-                width = maxWidth;
-            }
+        function resizeImage(dataURL, maxWidth, maxHeight) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.src = dataURL;
+                img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    let width = img.width;
+                    let height = img.height;
 
-            resizedCanvas.width = width;
-            resizedCanvas.height = height;
-            const ctx = resizedCanvas.getContext('2d');
-            ctx.drawImage(canvas, 0, 0, width, height);
+                    if (width > height) {
+                        if (width > maxWidth) {
+                            height = Math.floor(height * (maxWidth / width));
+                            width = maxWidth;
+                        }
+                    } else {
+                        if (height > maxHeight) {
+                            width = Math.floor(width * (maxHeight / height));
+                            height = maxHeight;
+                        }
+                    }
 
-            return resizedCanvas.toDataURL('image/png');
+                    canvas.width = width;
+                    canvas.height = height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, width, height);
+                    resolve(canvas.toDataURL('image/png'));
+                };
+            });
         }
 
         // Capture button event
-        document.getElementById('capture').addEventListener('click', function () {
+        document.getElementById('capture').addEventListener('click', async function () {
             const dataURL = captureImage();
-            $('#image-preview').attr('src', dataURL);
+            const resizedDataURL = await resizeImage(dataURL, 800, 400);
+            $('#image-preview').attr('src', resizedDataURL);
             $('#image-preview-container').removeClass('hidden');
 
             // click processing button
@@ -185,8 +197,9 @@
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
-                reader.onload = function (e) {
-                    $('#image-preview').attr('src', e.target.result);
+                reader.onload = async function (e) {
+                    const resizedDataURL = await resizeImage(e.target.result, 800, 400);
+                    $('#image-preview').attr('src', resizedDataURL);
                     $('#image-preview-container').removeClass('hidden');
                 }
                 reader.readAsDataURL(input.files[0]);
@@ -273,6 +286,7 @@
             }
             return new Blob([new Uint8Array(array)], { type: 'image/png' });
         }
+
     </script>
 </body>
 

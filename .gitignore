@@ -2,3 +2,6 @@ venv
 /runs/detect/train*/
 vision_key.json
 google_vision_logs.log
+flask.log
+enhanced_image.png
+processed_images/

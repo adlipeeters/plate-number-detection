@@ -68,3 +68,2874 @@ I0000 00:00:1720704411.364220 1245430 work_stealing_thread_pool.cc:269] WorkStea
 image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 640x640 1 licence, 205.0ms
 Speed: 8.1ms pre-process, 205.0ms inference, 2.9ms postprocess per image at shape (1, 3, 640, 640)
 Results saved to [1mruns/detect/train[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720704500.759479 1246115 ev_epoll1_linux.cc:125] grpc epoll fd: 6
+I0000 00:00:1720704500.998452 1246131 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720704500.999444 1246131 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 640x640 1 licence, 185.2ms
+Speed: 2.3ms pre-process, 185.2ms inference, 2.4ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train2[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720704733.379439 1247691 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720704733.559210 1247700 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720704733.559891 1247700 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+I0000 00:00:1720704733.562088 1247691 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720704733.784613 1247713 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720704733.785507 1247716 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 2 licences, 239.2ms
+Speed: 4.2ms pre-process, 239.2ms inference, 2.7ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train3[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720704739.723563 1247757 ev_epoll1_linux.cc:125] grpc epoll fd: 6
+I0000 00:00:1720704739.903239 1247772 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720704739.903605 1247772 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 183.8ms
+Speed: 4.3ms pre-process, 183.8ms inference, 1.4ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train4[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 207.8ms
+Speed: 23.3ms pre-process, 207.8ms inference, 0.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train5[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720706674.199614 1259374 ev_epoll1_linux.cc:125] grpc epoll fd: 6
+I0000 00:00:1720706674.674522 1259391 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720706674.675294 1259391 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 247.9ms
+Speed: 3.7ms pre-process, 247.9ms inference, 12.3ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train6[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720706691.156915 1259494 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 11
+    y: 5
+  }
+  vertices {
+    x: 141
+    y: 5
+  }
+  vertices {
+    x: 141
+    y: 50
+  }
+  vertices {
+    x: 11
+    y: 50
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 15
+    y: 6
+  }
+  vertices {
+    x: 35
+    y: 9
+  }
+  vertices {
+    x: 31
+    y: 36
+  }
+  vertices {
+    x: 11
+    y: 34
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 43
+    y: 9
+  }
+  vertices {
+    x: 87
+    y: 15
+  }
+  vertices {
+    x: 83
+    y: 42
+  }
+  vertices {
+    x: 39
+    y: 37
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 94
+    y: 15
+  }
+  vertices {
+    x: 141
+    y: 21
+  }
+  vertices {
+    x: 137
+    y: 50
+  }
+  vertices {
+    x: 90
+    y: 44
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 9
+    y: 4
+  }
+  vertices {
+    x: 107
+    y: 4
+  }
+  vertices {
+    x: 107
+    y: 38
+  }
+  vertices {
+    x: 9
+    y: 38
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 12
+    y: 5
+  }
+  vertices {
+    x: 27
+    y: 7
+  }
+  vertices {
+    x: 24
+    y: 28
+  }
+  vertices {
+    x: 9
+    y: 26
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 31
+    y: 7
+  }
+  vertices {
+    x: 65
+    y: 11
+  }
+  vertices {
+    x: 62
+    y: 32
+  }
+  vertices {
+    x: 28
+    y: 28
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 72
+    y: 12
+  }
+  vertices {
+    x: 107
+    y: 17
+  }
+  vertices {
+    x: 104
+    y: 38
+  }
+  vertices {
+    x: 69
+    y: 34
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "RO\nMH 14 WOW"
+bounding_poly {
+  vertices {
+    x: 1
+    y: 4
+  }
+  vertices {
+    x: 115
+    y: 4
+  }
+  vertices {
+    x: 115
+    y: 25
+  }
+  vertices {
+    x: 1
+    y: 25
+  }
+}
+, description: "RO"
+bounding_poly {
+  vertices {
+    x: 1
+    y: 17
+  }
+  vertices {
+    x: 9
+    y: 17
+  }
+  vertices {
+    x: 9
+    y: 23
+  }
+  vertices {
+    x: 1
+    y: 23
+  }
+}
+, description: "MH"
+bounding_poly {
+  vertices {
+    x: 12
+    y: 6
+  }
+  vertices {
+    x: 39
+    y: 6
+  }
+  vertices {
+    x: 39
+    y: 25
+  }
+  vertices {
+    x: 12
+    y: 25
+  }
+}
+, description: "14"
+bounding_poly {
+  vertices {
+    x: 47
+    y: 6
+  }
+  vertices {
+    x: 66
+    y: 6
+  }
+  vertices {
+    x: 66
+    y: 24
+  }
+  vertices {
+    x: 47
+    y: 24
+  }
+}
+, description: "WOW"
+bounding_poly {
+  vertices {
+    x: 69
+    y: 5
+  }
+  vertices {
+    x: 115
+    y: 4
+  }
+  vertices {
+    x: 115
+    y: 23
+  }
+  vertices {
+    x: 69
+    y: 24
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "MH 14 WOW"
+bounding_poly {
+  vertices {
+    x: 10
+    y: 2
+  }
+  vertices {
+    x: 281
+    y: 2
+  }
+  vertices {
+    x: 281
+    y: 48
+  }
+  vertices {
+    x: 10
+    y: 48
+  }
+}
+, description: "MH"
+bounding_poly {
+  vertices {
+    x: 10
+    y: 3
+  }
+  vertices {
+    x: 79
+    y: 4
+  }
+  vertices {
+    x: 79
+    y: 47
+  }
+  vertices {
+    x: 10
+    y: 46
+  }
+}
+, description: "14"
+bounding_poly {
+  vertices {
+    x: 102
+    y: 3
+  }
+  vertices {
+    x: 147
+    y: 3
+  }
+  vertices {
+    x: 147
+    y: 46
+  }
+  vertices {
+    x: 102
+    y: 46
+  }
+}
+, description: "WOW"
+bounding_poly {
+  vertices {
+    x: 156
+    y: 4
+  }
+  vertices {
+    x: 281
+    y: 5
+  }
+  vertices {
+    x: 281
+    y: 48
+  }
+  vertices {
+    x: 156
+    y: 47
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 11
+    y: 9
+  }
+  vertices {
+    x: 144
+    y: 9
+  }
+  vertices {
+    x: 144
+    y: 57
+  }
+  vertices {
+    x: 11
+    y: 57
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 15
+    y: 10
+  }
+  vertices {
+    x: 35
+    y: 13
+  }
+  vertices {
+    x: 30
+    y: 40
+  }
+  vertices {
+    x: 11
+    y: 37
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 43
+    y: 14
+  }
+  vertices {
+    x: 87
+    y: 21
+  }
+  vertices {
+    x: 83
+    y: 48
+  }
+  vertices {
+    x: 39
+    y: 41
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 96
+    y: 22
+  }
+  vertices {
+    x: 144
+    y: 30
+  }
+  vertices {
+    x: 140
+    y: 57
+  }
+  vertices {
+    x: 92
+    y: 50
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 14
+    y: 2
+  }
+  vertices {
+    x: 119
+    y: 2
+  }
+  vertices {
+    x: 119
+    y: 24
+  }
+  vertices {
+    x: 14
+    y: 24
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 15
+    y: 3
+  }
+  vertices {
+    x: 30
+    y: 4
+  }
+  vertices {
+    x: 29
+    y: 18
+  }
+  vertices {
+    x: 14
+    y: 17
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 38
+    y: 4
+  }
+  vertices {
+    x: 73
+    y: 6
+  }
+  vertices {
+    x: 72
+    y: 20
+  }
+  vertices {
+    x: 37
+    y: 18
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 80
+    y: 7
+  }
+  vertices {
+    x: 119
+    y: 10
+  }
+  vertices {
+    x: 118
+    y: 24
+  }
+  vertices {
+    x: 79
+    y: 21
+  }
+}
+]
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 13
+  }
+  vertices {
+    x: 119
+  }
+  vertices {
+    x: 119
+    y: 19
+  }
+  vertices {
+    x: 13
+    y: 19
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 14
+  }
+  vertices {
+    x: 28
+  }
+  vertices {
+    x: 27
+    y: 15
+  }
+  vertices {
+    x: 13
+    y: 14
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 36
+  }
+  vertices {
+    x: 70
+    y: 2
+  }
+  vertices {
+    x: 69
+    y: 17
+  }
+  vertices {
+    x: 35
+    y: 15
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 78
+    y: 2
+  }
+  vertices {
+    x: 119
+    y: 4
+  }
+  vertices {
+    x: 118
+    y: 19
+  }
+  vertices {
+    x: 77
+    y: 17
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 21
+  }
+  vertices {
+    x: 169
+  }
+  vertices {
+    x: 169
+    y: 27
+  }
+  vertices {
+    x: 21
+    y: 27
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 22
+  }
+  vertices {
+    x: 41
+    y: 1
+  }
+  vertices {
+    x: 40
+    y: 19
+  }
+  vertices {
+    x: 21
+    y: 18
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 55
+    y: 1
+  }
+  vertices {
+    x: 103
+    y: 4
+  }
+  vertices {
+    x: 102
+    y: 22
+  }
+  vertices {
+    x: 54
+    y: 19
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 115
+    y: 5
+  }
+  vertices {
+    x: 169
+    y: 8
+  }
+  vertices {
+    x: 168
+    y: 26
+  }
+  vertices {
+    x: 114
+    y: 23
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "RDMH 14 WOW"
+bounding_poly {
+  vertices {
+    x: 2
+    y: 3
+  }
+  vertices {
+    x: 192
+    y: 3
+  }
+  vertices {
+    x: 192
+    y: 23
+  }
+  vertices {
+    x: 2
+    y: 23
+  }
+}
+, description: "RDMH"
+bounding_poly {
+  vertices {
+    x: 2
+    y: 6
+  }
+  vertices {
+    x: 62
+    y: 5
+  }
+  vertices {
+    x: 62
+    y: 22
+  }
+  vertices {
+    x: 2
+    y: 23
+  }
+}
+, description: "14"
+bounding_poly {
+  vertices {
+    x: 78
+    y: 5
+  }
+  vertices {
+    x: 107
+    y: 5
+  }
+  vertices {
+    x: 107
+    y: 21
+  }
+  vertices {
+    x: 78
+    y: 21
+  }
+}
+, description: "WOW"
+bounding_poly {
+  vertices {
+    x: 113
+    y: 4
+  }
+  vertices {
+    x: 192
+    y: 3
+  }
+  vertices {
+    x: 192
+    y: 20
+  }
+  vertices {
+    x: 113
+    y: 21
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+I0000 00:00:1720706691.329195 1259513 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720706691.336279 1259513 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 187.7ms
+Speed: 3.4ms pre-process, 187.7ms inference, 1.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train7[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720706763.575854 1259940 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720706763.758435 1259962 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720706763.759646 1259962 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 185.6ms
+Speed: 3.0ms pre-process, 185.6ms inference, 2.0ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train8[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720707524.137805 1264548 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720707524.510856 1264566 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720707524.513173 1264566 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 213.3ms
+Speed: 5.1ms pre-process, 213.3ms inference, 3.4ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train9[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 253.6ms
+Speed: 7.6ms pre-process, 253.6ms inference, 1.2ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train10[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 354.5ms
+Speed: 4.6ms pre-process, 354.5ms inference, 1.1ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train11[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720710076.702673 1279963 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720710077.003746 1279980 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720710077.004645 1279980 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 161.7ms
+Speed: 1.8ms pre-process, 161.7ms inference, 1.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train12[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720710094.962784 1280089 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720710095.132970 1280108 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720710095.133420 1280089 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 196.6ms
+Speed: 3.7ms pre-process, 196.6ms inference, 1.4ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train13[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 181.5ms
+Speed: 6.9ms pre-process, 181.5ms inference, 1.6ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train14[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 210.8ms
+Speed: 1.1ms pre-process, 210.8ms inference, 2.9ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train15[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 162.4ms
+Speed: 1.5ms pre-process, 162.4ms inference, 0.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train16[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 166.3ms
+Speed: 1.5ms pre-process, 166.3ms inference, 1.4ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train17[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720727399.578549 1310054 ev_epoll1_linux.cc:125] grpc epoll fd: 6
+I0000 00:00:1720727399.820035 1310066 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720727399.821738 1310066 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 162.4ms
+Speed: 0.9ms pre-process, 162.4ms inference, 4.1ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train18[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720776098.801211 1318617 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720776099.162124 1318631 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720776099.165777 1318617 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 596.0ms
+Speed: 50.0ms pre-process, 596.0ms inference, 27.3ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train19[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720776153.404560 1318635 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720776153.581898 1318645 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720776153.583176 1318645 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 180.4ms
+Speed: 2.6ms pre-process, 180.4ms inference, 2.2ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train20[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720776171.777574 1318653 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720776171.991442 1318667 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720776171.992186 1318667 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 197.1ms
+Speed: 1.7ms pre-process, 197.1ms inference, 6.9ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train21[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 167.8ms
+Speed: 1.2ms pre-process, 167.8ms inference, 0.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train22[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 436.6ms
+Speed: 1.1ms pre-process, 436.6ms inference, 2.5ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train23[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720776217.923742 1318683 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720776218.086384 1318696 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720776218.087321 1318683 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 213.6ms
+Speed: 2.5ms pre-process, 213.6ms inference, 1.5ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train24[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720776235.975251 1318700 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720776236.165944 1318714 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720776236.166384 1318714 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 128.9ms
+Speed: 0.8ms pre-process, 128.9ms inference, 1.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train25[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 141.0ms
+Speed: 2.2ms pre-process, 141.0ms inference, 0.6ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train26[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 139.7ms
+Speed: 1.4ms pre-process, 139.7ms inference, 0.6ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train27[0m
+[locale: "en"
+description: "MH 14 WOW"
+bounding_poly {
+  vertices {
+    x: 2
+    y: 3
+  }
+  vertices {
+    x: 298
+    y: 3
+  }
+  vertices {
+    x: 298
+    y: 36
+  }
+  vertices {
+    x: 2
+    y: 36
+  }
+}
+, description: "MH"
+bounding_poly {
+  vertices {
+    x: 2
+    y: 10
+  }
+  vertices {
+    x: 71
+    y: 9
+  }
+  vertices {
+    x: 72
+    y: 35
+  }
+  vertices {
+    x: 3
+    y: 36
+  }
+}
+, description: "14"
+bounding_poly {
+  vertices {
+    x: 99
+    y: 7
+  }
+  vertices {
+    x: 146
+    y: 6
+  }
+  vertices {
+    x: 147
+    y: 32
+  }
+  vertices {
+    x: 100
+    y: 33
+  }
+}
+, description: "WOW"
+bounding_poly {
+  vertices {
+    x: 160
+    y: 6
+  }
+  vertices {
+    x: 297
+    y: 3
+  }
+  vertices {
+    x: 298
+    y: 29
+  }
+  vertices {
+    x: 161
+    y: 32
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "VL888LEX"
+bounding_poly {
+  vertices {
+    x: 18
+    y: 10
+  }
+  vertices {
+    x: 255
+    y: 10
+  }
+  vertices {
+    x: 255
+    y: 33
+  }
+  vertices {
+    x: 18
+    y: 33
+  }
+}
+, description: "VL888LEX"
+bounding_poly {
+  vertices {
+    x: 18
+    y: 10
+  }
+  vertices {
+    x: 255
+    y: 10
+  }
+  vertices {
+    x: 255
+    y: 33
+  }
+  vertices {
+    x: 18
+    y: 33
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 12
+  }
+  vertices {
+    x: 120
+  }
+  vertices {
+    x: 120
+    y: 21
+  }
+  vertices {
+    x: 12
+    y: 21
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 13
+  }
+  vertices {
+    x: 27
+    y: 1
+  }
+  vertices {
+    x: 26
+    y: 16
+  }
+  vertices {
+    x: 12
+    y: 15
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 37
+    y: 1
+  }
+  vertices {
+    x: 72
+    y: 3
+  }
+  vertices {
+    x: 71
+    y: 18
+  }
+  vertices {
+    x: 36
+    y: 16
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 79
+    y: 3
+  }
+  vertices {
+    x: 120
+    y: 5
+  }
+  vertices {
+    x: 119
+    y: 21
+  }
+  vertices {
+    x: 78
+    y: 19
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "VL888LEX"
+bounding_poly {
+  vertices {
+    x: 25
+    y: 6
+  }
+  vertices {
+    x: 285
+    y: 6
+  }
+  vertices {
+    x: 285
+    y: 32
+  }
+  vertices {
+    x: 25
+    y: 32
+  }
+}
+, description: "VL888LEX"
+bounding_poly {
+  vertices {
+    x: 25
+    y: 6
+  }
+  vertices {
+    x: 285
+    y: 6
+  }
+  vertices {
+    x: 285
+    y: 32
+  }
+  vertices {
+    x: 25
+    y: 32
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "VL888LEX"
+bounding_poly {
+  vertices {
+    x: 35
+    y: 6
+  }
+  vertices {
+    x: 149
+    y: 6
+  }
+  vertices {
+    x: 149
+    y: 18
+  }
+  vertices {
+    x: 35
+    y: 18
+  }
+}
+, description: "VL888LEX"
+bounding_poly {
+  vertices {
+    x: 35
+    y: 7
+  }
+  vertices {
+    x: 149
+    y: 6
+  }
+  vertices {
+    x: 149
+    y: 17
+  }
+  vertices {
+    x: 35
+    y: 18
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "VL888LEX"
+bounding_poly {
+  vertices {
+    x: 21
+    y: 4
+  }
+  vertices {
+    x: 120
+    y: 4
+  }
+  vertices {
+    x: 120
+    y: 17
+  }
+  vertices {
+    x: 21
+    y: 17
+  }
+}
+, description: "VL888LEX"
+bounding_poly {
+  vertices {
+    x: 21
+    y: 5
+  }
+  vertices {
+    x: 120
+    y: 4
+  }
+  vertices {
+    x: 120
+    y: 16
+  }
+  vertices {
+    x: 21
+    y: 17
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "B 999 BMG"
+bounding_poly {
+  vertices {
+    x: 38
+    y: 6
+  }
+  vertices {
+    x: 253
+    y: 6
+  }
+  vertices {
+    x: 253
+    y: 27
+  }
+  vertices {
+    x: 38
+    y: 27
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 38
+    y: 6
+  }
+  vertices {
+    x: 69
+    y: 6
+  }
+  vertices {
+    x: 69
+    y: 27
+  }
+  vertices {
+    x: 38
+    y: 27
+  }
+}
+, description: "999"
+bounding_poly {
+  vertices {
+    x: 85
+    y: 6
+  }
+  vertices {
+    x: 159
+    y: 6
+  }
+  vertices {
+    x: 159
+    y: 27
+  }
+  vertices {
+    x: 85
+    y: 27
+  }
+}
+, description: "BMG"
+bounding_poly {
+  vertices {
+    x: 169
+    y: 6
+  }
+  vertices {
+    x: 253
+    y: 6
+  }
+  vertices {
+    x: 253
+    y: 27
+  }
+  vertices {
+    x: 169
+    y: 27
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "B 999 BMG"
+bounding_poly {
+  vertices {
+    x: 7
+    y: 6
+  }
+  vertices {
+    x: 272
+    y: 6
+  }
+  vertices {
+    x: 272
+    y: 32
+  }
+  vertices {
+    x: 7
+    y: 32
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 7
+    y: 6
+  }
+  vertices {
+    x: 44
+    y: 6
+  }
+  vertices {
+    x: 44
+    y: 32
+  }
+  vertices {
+    x: 7
+    y: 32
+  }
+}
+, description: "999"
+bounding_poly {
+  vertices {
+    x: 64
+    y: 6
+  }
+  vertices {
+    x: 156
+    y: 6
+  }
+  vertices {
+    x: 156
+    y: 32
+  }
+  vertices {
+    x: 64
+    y: 32
+  }
+}
+, description: "BMG"
+bounding_poly {
+  vertices {
+    x: 169
+    y: 6
+  }
+  vertices {
+    x: 272
+    y: 6
+  }
+  vertices {
+    x: 272
+    y: 32
+  }
+  vertices {
+    x: 169
+    y: 32
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "lt"
+description: "SV 18 ICL"
+bounding_poly {
+  vertices {
+    x: 28
+    y: 5
+  }
+  vertices {
+    x: 288
+    y: 5
+  }
+  vertices {
+    x: 288
+    y: 42
+  }
+  vertices {
+    x: 28
+    y: 42
+  }
+}
+, description: "SV"
+bounding_poly {
+  vertices {
+    x: 28
+    y: 10
+  }
+  vertices {
+    x: 106
+    y: 9
+  }
+  vertices {
+    x: 106
+    y: 41
+  }
+  vertices {
+    x: 28
+    y: 42
+  }
+}
+, description: "18"
+bounding_poly {
+  vertices {
+    x: 125
+    y: 8
+  }
+  vertices {
+    x: 178
+    y: 7
+  }
+  vertices {
+    x: 178
+    y: 39
+  }
+  vertices {
+    x: 125
+    y: 40
+  }
+}
+, description: "ICL"
+bounding_poly {
+  vertices {
+    x: 199
+    y: 7
+  }
+  vertices {
+    x: 288
+    y: 6
+  }
+  vertices {
+    x: 288
+    y: 38
+  }
+  vertices {
+    x: 199
+    y: 39
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "B 058743"
+bounding_poly {
+  vertices {
+    x: 5
+    y: 1
+  }
+  vertices {
+    x: 145
+    y: 1
+  }
+  vertices {
+    x: 145
+    y: 21
+  }
+  vertices {
+    x: 5
+    y: 21
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 5
+    y: 2
+  }
+  vertices {
+    x: 25
+    y: 2
+  }
+  vertices {
+    x: 25
+    y: 19
+  }
+  vertices {
+    x: 5
+    y: 19
+  }
+}
+, description: "058743"
+bounding_poly {
+  vertices {
+    x: 37
+    y: 2
+  }
+  vertices {
+    x: 145
+    y: 4
+  }
+  vertices {
+    x: 145
+    y: 21
+  }
+  vertices {
+    x: 37
+    y: 19
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "gd"
+description: "ROMH 14 WOW"
+bounding_poly {
+  vertices {
+    x: 2
+  }
+  vertices {
+    x: 355
+  }
+  vertices {
+    x: 355
+    y: 36
+  }
+  vertices {
+    x: 2
+    y: 36
+  }
+}
+, description: "ROMH"
+bounding_poly {
+  vertices {
+    x: 2
+    y: 1
+  }
+  vertices {
+    x: 116
+  }
+  vertices {
+    x: 117
+    y: 33
+  }
+  vertices {
+    x: 3
+    y: 36
+  }
+}
+, description: "14"
+bounding_poly {
+  vertices {
+    x: 149
+  }
+  vertices {
+    x: 201
+  }
+  vertices {
+    x: 202
+    y: 32
+  }
+  vertices {
+    x: 150
+    y: 33
+  }
+}
+, description: "WOW"
+bounding_poly {
+  vertices {
+    x: 214
+  }
+  vertices {
+    x: 354
+  }
+  vertices {
+    x: 355
+    y: 28
+  }
+  vertices {
+    x: 215
+    y: 31
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 167.3ms
+Speed: 0.9ms pre-process, 167.3ms inference, 2.1ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train28[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 159.1ms
+Speed: 2.6ms pre-process, 159.1ms inference, 0.7ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train29[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 136.6ms
+Speed: 0.8ms pre-process, 136.6ms inference, 0.6ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train30[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 187.8ms
+Speed: 0.9ms pre-process, 187.8ms inference, 0.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train31[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 238.4ms
+Speed: 0.8ms pre-process, 238.4ms inference, 1.2ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train32[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720776295.630246 1318762 ev_epoll1_linux.cc:125] grpc epoll fd: 6
+I0000 00:00:1720776295.824383 1318775 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720776295.825268 1318775 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 180.6ms
+Speed: 20.4ms pre-process, 180.6ms inference, 1.4ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train33[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720776316.611588 1318783 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720776316.759334 1318793 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720776316.760327 1318793 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 163.3ms
+Speed: 6.9ms pre-process, 163.3ms inference, 1.3ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train34[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720776455.875089 1318815 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720776456.106478 1318829 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720776456.107120 1318829 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 183.0ms
+Speed: 3.3ms pre-process, 183.0ms inference, 2.1ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train35[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720776463.959729 1318833 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720776464.130062 1318843 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720776464.133471 1318846 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 169.9ms
+Speed: 2.2ms pre-process, 169.9ms inference, 2.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train36[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 174.7ms
+Speed: 2.9ms pre-process, 174.7ms inference, 0.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train37[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 381.5ms
+Speed: 34.6ms pre-process, 381.5ms inference, 11.9ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train38[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720816186.575526 1401354 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720816186.974413 1401367 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720816186.977990 1401367 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 306.3ms
+Speed: 35.2ms pre-process, 306.3ms inference, 15.3ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train39[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 132.4ms
+Speed: 4.8ms pre-process, 132.4ms inference, 0.7ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train40[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1720816200.058982 1401378 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1720816200.251501 1401388 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1720816200.252125 1401378 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 266.1ms
+Speed: 11.3ms pre-process, 266.1ms inference, 4.1ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train41[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1725907055.634677 2587043 ev_epoll1_linux.cc:125] grpc epoll fd: 6
+I0000 00:00:1725907056.056248 2587052 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1725907056.059396 2587052 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 640x480 1 licence, 397.8ms
+Speed: 68.7ms pre-process, 397.8ms inference, 23.7ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train42[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 640x480 286.1ms
+Speed: 6.0ms pre-process, 286.1ms inference, 16.0ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train43[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 640x480 203.9ms
+Speed: 5.7ms pre-process, 203.9ms inference, 2.0ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train44[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1727769003.637390 2844554 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1727769004.024159 2844564 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1727769004.028591 2844564 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 480x640 1 licence, 383.4ms
+Speed: 7.9ms pre-process, 383.4ms inference, 16.5ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train45[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1727769033.822624 2844572 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 12
+  }
+  vertices {
+    x: 113
+  }
+  vertices {
+    x: 113
+    y: 18
+  }
+  vertices {
+    x: 12
+    y: 18
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 13
+  }
+  vertices {
+    x: 27
+  }
+  vertices {
+    x: 26
+    y: 15
+  }
+  vertices {
+    x: 12
+    y: 15
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 35
+  }
+  vertices {
+    x: 68
+    y: 1
+  }
+  vertices {
+    x: 67
+    y: 17
+  }
+  vertices {
+    x: 34
+    y: 16
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 76
+    y: 1
+  }
+  vertices {
+    x: 113
+    y: 2
+  }
+  vertices {
+    x: 112
+    y: 18
+  }
+  vertices {
+    x: 75
+    y: 17
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 13
+  }
+  vertices {
+    x: 118
+  }
+  vertices {
+    x: 118
+    y: 19
+  }
+  vertices {
+    x: 13
+    y: 19
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 13
+  }
+  vertices {
+    x: 27
+  }
+  vertices {
+    x: 27
+    y: 16
+  }
+  vertices {
+    x: 13
+    y: 16
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 37
+  }
+  vertices {
+    x: 72
+    y: 1
+  }
+  vertices {
+    x: 72
+    y: 17
+  }
+  vertices {
+    x: 37
+    y: 16
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 80
+    y: 1
+  }
+  vertices {
+    x: 118
+    y: 2
+  }
+  vertices {
+    x: 118
+    y: 19
+  }
+  vertices {
+    x: 80
+    y: 18
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "und"
+description: "B 123 ZLI"
+bounding_poly {
+  vertices {
+    x: 10
+  }
+  vertices {
+    x: 118
+  }
+  vertices {
+    x: 118
+    y: 21
+  }
+  vertices {
+    x: 10
+    y: 21
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 11
+    y: 1
+  }
+  vertices {
+    x: 25
+    y: 2
+  }
+  vertices {
+    x: 24
+    y: 18
+  }
+  vertices {
+    x: 10
+    y: 17
+  }
+}
+, description: "123"
+bounding_poly {
+  vertices {
+    x: 35
+    y: 1
+  }
+  vertices {
+    x: 70
+    y: 2
+  }
+  vertices {
+    x: 69
+    y: 19
+  }
+  vertices {
+    x: 34
+    y: 18
+  }
+}
+, description: "ZLI"
+bounding_poly {
+  vertices {
+    x: 79
+    y: 3
+  }
+  vertices {
+    x: 118
+    y: 5
+  }
+  vertices {
+    x: 117
+    y: 22
+  }
+  vertices {
+    x: 78
+    y: 20
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "B 404 ERR"
+bounding_poly {
+  vertices {
+    x: 12
+    y: 5
+  }
+  vertices {
+    x: 129
+    y: 5
+  }
+  vertices {
+    x: 129
+    y: 17
+  }
+  vertices {
+    x: 12
+    y: 17
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 12
+    y: 5
+  }
+  vertices {
+    x: 27
+    y: 5
+  }
+  vertices {
+    x: 27
+    y: 17
+  }
+  vertices {
+    x: 12
+    y: 17
+  }
+}
+, description: "404"
+bounding_poly {
+  vertices {
+    x: 36
+    y: 5
+  }
+  vertices {
+    x: 77
+    y: 5
+  }
+  vertices {
+    x: 77
+    y: 17
+  }
+  vertices {
+    x: 36
+    y: 17
+  }
+}
+, description: "ERR"
+bounding_poly {
+  vertices {
+    x: 81
+    y: 5
+  }
+  vertices {
+    x: 129
+    y: 5
+  }
+  vertices {
+    x: 129
+    y: 17
+  }
+  vertices {
+    x: 81
+    y: 17
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "mg"
+description: "77 VHV"
+bounding_poly {
+  vertices {
+    x: 17
+    y: 3
+  }
+  vertices {
+    x: 175
+    y: 3
+  }
+  vertices {
+    x: 175
+    y: 26
+  }
+  vertices {
+    x: 17
+    y: 26
+  }
+}
+, description: "77"
+bounding_poly {
+  vertices {
+    x: 17
+    y: 4
+  }
+  vertices {
+    x: 65
+    y: 4
+  }
+  vertices {
+    x: 65
+    y: 25
+  }
+  vertices {
+    x: 17
+    y: 25
+  }
+}
+, description: "VHV"
+bounding_poly {
+  vertices {
+    x: 83
+    y: 4
+  }
+  vertices {
+    x: 175
+    y: 5
+  }
+  vertices {
+    x: 175
+    y: 26
+  }
+  vertices {
+    x: 83
+    y: 25
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "mg"
+description: "B 77 VHV"
+bounding_poly {
+  vertices {
+    x: 31
+    y: 2
+  }
+  vertices {
+    x: 154
+    y: 2
+  }
+  vertices {
+    x: 154
+    y: 20
+  }
+  vertices {
+    x: 31
+    y: 20
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 31
+    y: 3
+  }
+  vertices {
+    x: 48
+    y: 3
+  }
+  vertices {
+    x: 48
+    y: 18
+  }
+  vertices {
+    x: 31
+    y: 18
+  }
+}
+, description: "77"
+bounding_poly {
+  vertices {
+    x: 59
+    y: 3
+  }
+  vertices {
+    x: 87
+    y: 4
+  }
+  vertices {
+    x: 87
+    y: 19
+  }
+  vertices {
+    x: 59
+    y: 18
+  }
+}
+, description: "VHV"
+bounding_poly {
+  vertices {
+    x: 99
+    y: 4
+  }
+  vertices {
+    x: 154
+    y: 5
+  }
+  vertices {
+    x: 154
+    y: 20
+  }
+  vertices {
+    x: 99
+    y: 19
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "B 404 ERR"
+bounding_poly {
+  vertices {
+    x: 11
+    y: 6
+  }
+  vertices {
+    x: 110
+    y: 6
+  }
+  vertices {
+    x: 110
+    y: 25
+  }
+  vertices {
+    x: 11
+    y: 25
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 11
+    y: 6
+  }
+  vertices {
+    x: 25
+    y: 6
+  }
+  vertices {
+    x: 25
+    y: 24
+  }
+  vertices {
+    x: 11
+    y: 24
+  }
+}
+, description: "404"
+bounding_poly {
+  vertices {
+    x: 30
+    y: 6
+  }
+  vertices {
+    x: 66
+    y: 6
+  }
+  vertices {
+    x: 66
+    y: 24
+  }
+  vertices {
+    x: 30
+    y: 24
+  }
+}
+, description: "ERR"
+bounding_poly {
+  vertices {
+    x: 69
+    y: 6
+  }
+  vertices {
+    x: 110
+    y: 6
+  }
+  vertices {
+    x: 110
+    y: 24
+  }
+  vertices {
+    x: 69
+    y: 24
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+[locale: "en"
+description: "180\nB-725 ATN"
+bounding_poly {
+  vertices {
+    x: 2
+    y: 5
+  }
+  vertices {
+    x: 90
+    y: 5
+  }
+  vertices {
+    x: 90
+    y: 33
+  }
+  vertices {
+    x: 2
+    y: 33
+  }
+}
+, description: "180"
+bounding_poly {
+  vertices {
+    x: 4
+    y: 33
+  }
+  vertices {
+    x: 2
+    y: 18
+  }
+  vertices {
+    x: 10
+    y: 17
+  }
+  vertices {
+    x: 12
+    y: 33
+  }
+}
+, description: "B"
+bounding_poly {
+  vertices {
+    x: 14
+    y: 16
+  }
+  vertices {
+    x: 25
+    y: 15
+  }
+  vertices {
+    x: 27
+    y: 27
+  }
+  vertices {
+    x: 16
+    y: 29
+  }
+}
+, description: "-"
+bounding_poly {
+  vertices {
+    x: 24
+    y: 14
+  }
+  vertices {
+    x: 33
+    y: 13
+  }
+  vertices {
+    x: 35
+    y: 26
+  }
+  vertices {
+    x: 26
+    y: 27
+  }
+}
+, description: "725"
+bounding_poly {
+  vertices {
+    x: 29
+    y: 13
+  }
+  vertices {
+    x: 56
+    y: 9
+  }
+  vertices {
+    x: 57
+    y: 22
+  }
+  vertices {
+    x: 31
+    y: 26
+  }
+}
+, description: "ATN"
+bounding_poly {
+  vertices {
+    x: 59
+    y: 9
+  }
+  vertices {
+    x: 89
+    y: 5
+  }
+  vertices {
+    x: 90
+    y: 18
+  }
+  vertices {
+    x: 61
+    y: 22
+  }
+}
+]
+ImmutableMultiDict([('file', <FileStorage: 'capture.png' ('image/png')>)])
+I0000 00:00:1727769034.027965 2844583 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1727769034.029039 2844583 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 448x640 1 licence, 205.7ms
+Speed: 2.9ms pre-process, 205.7ms inference, 1.8ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train46[0m
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 640x480 257.9ms
+Speed: 46.3ms pre-process, 257.9ms inference, 2.3ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train47[0m
+Traceback (most recent call last):
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adli/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adli/.local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/adli/projects/plate-number-detection/app.py", line 52, in process_image
+    with open(saved_image_path, "rb") as image_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+Ultralytics YOLOv8.0.3 🚀 Python-3.8.10 torch-2.3.1+cu121 CPU
+Fusing layers... 
+Model summary: 168 layers, 3005843 parameters, 0 gradients, 8.1 GFLOPs
+I0000 00:00:1727769116.652988 2844597 ev_epoll1_linux.cc:125] grpc epoll fd: 7
+I0000 00:00:1727769116.842758 2844607 tcp_posix.cc:809] IOMGR endpoint shutdown
+I0000 00:00:1727769116.845061 2844607 work_stealing_thread_pool.cc:269] WorkStealingThreadPoolImpl::Quiesce
+image 1/1 /home/adli/projects/plate-number-detection/assets/uploads/capture.png: 448x640 1 licence, 180.0ms
+Speed: 8.2ms pre-process, 180.0ms inference, 1.9ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/train48[0m
